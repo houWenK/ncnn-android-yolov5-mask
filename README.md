@@ -86,9 +86,9 @@ tags:
 
 - 设置你的android的版本，选择兼容的NDK和CMake,这里我选择的NDK是21.3.6528147，CMake是3.10.2.4988404（调了一下午，才找到与gradle版本不冲突的NDK和CMake版本）
 
-![](YOLOv5的Android部署，基于NCNN/tu3.jpg)
+![](img/tu3.jpg)
 
-![](YOLOv5的Android部署，基于NCNN/tu4.jpg)
+![](README.assets/tu4.jpg)
 
 - 下载`yolov5 for android` 的源码
 
@@ -104,7 +104,7 @@ https://github.com/Tencent/ncnn/releases
 
 - 下载解压后拷贝到 `ncnn-android-yolov5` 项目的 `app/src/main/jni` 目录下，目录结构是这样的
 
-![](YOLOv5的Android部署，基于NCNN/图一.png)
+![](README.assets/图一.png)
 
 - 然后修改同级目录下的 `CMakeLists.txt`，将其中的 `ncnn_DIR` 变量值修改成
 
@@ -112,7 +112,7 @@ https://github.com/Tencent/ncnn/releases
 set(ncnn_DIR ${CMAKE_SOURCE_DIR}/${ANDROID_ABI}/lib/cmake/ncnn)
 ```
 
-![](YOLOv5的Android部署，基于NCNN/图2.png)
+![](README.assets/图2.png)
 
 然后就可以连接手机进行部署了！
 
